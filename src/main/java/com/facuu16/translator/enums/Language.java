@@ -4,7 +4,7 @@ import org.jetbrains.annotations.NotNull;
 
 public enum Language {
 
-    AUTO("?"),
+    AUTO("auto"),
     AFRIKAANS("af"),
     ALBANIAN("sq"),
     AMHARIC("am"),

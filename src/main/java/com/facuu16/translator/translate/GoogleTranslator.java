@@ -26,7 +26,6 @@ public class GoogleTranslator implements Translator {
     @Override
     @NotNull
     public String request(@NotNull String text, @NotNull Language from, @NotNull Language to) throws IOException {
-        Validate.notNull(key);
         Validate.notNull(text);
         Validate.notNull(from);
         Validate.notNull(to);

@@ -1,11 +1,9 @@
 package com.facuu16.translator.translate;
 
-import com.facuu16.translator.TranslatorApplication;
 import com.facuu16.translator.enums.Language;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.concurrent.CompletableFuture;
-import java.util.logging.Level;
 
 public interface Translator {
 
@@ -18,10 +16,8 @@ public interface Translator {
             try {
                 return request(text, from, to);
             } catch (Exception e) {
-                TranslatorApplication.LOGGER.log(Level.SEVERE, "Error translating: ", e);
+                throw new RuntimeException("Error requesting: ", e);
             }
-
-            return "Error!";
         });
     };
 
