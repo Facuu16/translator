@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.facuu16.translator.controller.TranslatorController">
+    <top>
+        <TextArea fx:id="text" promptText="Enter the text to translate" />
+    </top>
+    <center>
+        <Button onAction="#translate" text="Translate" />
+    </center>
+    <bottom>
+        <TextArea fx:id="translated" editable="false" promptText="The translated text will appear here" />
+    </bottom>
+    <left>
+        <ComboBox fx:id="source" prefWidth="150.0" BorderPane.alignment="CENTER" />
+    </left>
+    <right>
+        <ComboBox fx:id="target" prefWidth="150.0" BorderPane.alignment="CENTER" />
+    </right>
+</BorderPane>
