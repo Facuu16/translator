@@ -39,5 +39,8 @@ bin/
 ### VS Code ###
 .vscode/
 
+### Agent Guidelines ###
+AGENTS.md
+
 ### Mac OS ###
 .DS_Store
